@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Harry Potter e a Pedra Filosofal",
+      "author": "J.K Rowling",
+      "price": 30
+    },
+    {
+      "id": "2",
+      "name": "Harry Potter e a Câmara Secreta",
+      "author": "J.K Rowling",
+      "price": 29.99
+    },
+    {
+      "id": "8hJz6C1",
+      "name": "Harry Potter e o Prisioneiro de Azkaban",
+      "author": "J.K Rowling",
+      "price": "30"
+    },
+    {
+      "id": "AiXC0nt",
+      "name": "Harry Potter e o Cálice de Fogo",
+      "author": "J.K Rowling",
+      "price": 40
+    },
+    {
+      "id": "DPBprbJ",
+      "name": "Harry Potter e a Ordem da Fênix",
+      "author": "J.K Rowling",
+      "price": "60.00"
+    },
+    {
+      "id": "Wba5Tc7",
+      "name": "Harry Potter e o Enigma do Príncipe",
+      "author": "J.K Rowling",
+      "price": "99.00"
+    },
+    {
+      "id": "7W6ykTB",
+      "name": "Harry Potter e as Relíquias da Morte",
+      "author": "J.K Rowling",
+      "price": "40.00"
+    }
+  ]
+}
