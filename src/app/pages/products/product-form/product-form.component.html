@@ -1,0 +1,87 @@
+<form [formGroup]="productForm" (submit)="submitForm()">
+  <h1 class="h2 text-uppercase text-center">{{ pageTitle }}</h1>
+  <hr />
+
+  <div class="row mt-5">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div class="form-group row">
+        <label
+          for="name"
+          class="col-xs-12 col-sm-2 col-form-label text-uppercase"
+          >Nome</label
+        >
+        <div class="col-xs-12 col-sm-10">
+          <input
+            type="text"
+            name="name"
+            class="form-control form-control-lg"
+            id="name"
+            placeholder="Nome do livro"
+            formControlName="name"
+          />
+          <app-form-field-error
+            [form-control]="productForm.get('name')"
+          ></app-form-field-error>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label
+          for="author"
+          class="col-xs-12 col-sm-2 col-form-label text-uppercase"
+          >Autor(a)</label
+        >
+        <div class="col-xs-12 col-sm-10">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="author"
+            placeholder="Autor(a) do livro"
+            formControlName="author"
+          />
+          <app-form-field-error
+            [form-control]="productForm.get('author')"
+          ></app-form-field-error>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label
+          for="price"
+          class="col-xs-12 col-sm-2 col-form-label text-uppercase"
+          >Preço</label
+        >
+        <div class="col-xs-12 col-sm-10">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">R$</div>
+            </div>
+            <input
+              [imask]="imaskConfig"
+              type="text"
+              class="form-control form-control-lg"
+              id="price"
+              placeholder="Preço do livro"
+              formControlName="price"
+            />
+          </div>
+          <app-form-field-error
+            [form-control]="productForm.get('price')"
+          ></app-form-field-error>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-xs-12 col-sm-12">
+          <button
+            type="submit"
+            [disabled]="submittingForm || productForm.invalid"
+            class="btn btn-success btn-lg btn-block mt-3 float-right"
+          >
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
