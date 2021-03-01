@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.container-primary {
+    margin-top: 50px;
+}
+
+@media(max-width: 767px) {
+    .btn-options:nth-child(2) {
+        margin-top: 10px;
+    }
+}
